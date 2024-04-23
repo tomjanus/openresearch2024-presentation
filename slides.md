@@ -1,5 +1,7 @@
 
 ## Tomasz Janus
+<!-- .slide: style="text-align: left;"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     .img.rounded {
         border-radius: 5%;
@@ -9,16 +11,15 @@
 <img src="images/tomasz-cropped.jpg" class="img custom rounded" style="float: right; align-items: center;" width="300"/>
 
 ### Research Associate
-<img src="images/tyndall_logo-cropped-small.jpg" 
-style="float: left; align-items: center; border-radius: 10px; box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.4);" 
-width="300"/>
+<p><img src="images/tyndall_logo-cropped-small.jpg" 
+style="display:block; border-radius: 10px; box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.4);" 
+width="300"/></p>
 
-<!-- .slide: style="text-align: left;"> -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+<i class="fa fa-envelope"></i><a href="mailto:tomasz.janus@manchester.ac.uk"> tomasz.janus@manchester.ac.uk</a><br>
 
-<i class="fas fa-envelope"></i>  tomasz.janus@manchester.ac.uk<br>
-<i class="devicon-linkedin-plain"></i> https://www.linkedin.com/in/tomasz-janus-6443b7198<br>
-<i class="fas fa-github"></i><a href="https://github.com/tomjanus"> github.com/tomjanus</a>
+<i class="devicon-linkedin-plain"></i> <a href="https://www.linkedin.com/in/tomasz-janus-6443b7198"> Linked<b>in</b> Profile</a> <br>
+
+<i class="fa fa-github"></i> <a href="https://github.com/tomjanus"> github.com/tomjanus</a>
 
 ---
 
@@ -43,11 +44,11 @@ width="300"/>
   }
 </style>
 <section>
-  <p>Project <b style="color: #FF7A59">Introduction</b></p>
-  <p class="fragment custom blur">Which <b style="color: #FF7A59">Open Research</b> Practices Have We Adopted and Why?</p>
-  <p class="fragment custom blur"><b style="color: #FF7A59">Challenges, Benefits, Opportunitiess</b></p>
-  <p class="fragment custom blur"><b style="color: #FF7A59">Lessons</b> Learned</p>
-  <p class="fragment custom blur">What's in it for us in the <b style="color: #FF7A59">Future</b>?</p>
+  <p>Project <b style="color: #c48560">Introduction</b></p>
+  <p class="fragment custom blur">Which <b style="color: #82401a">Open Research</b> Practices Have We Adopted and Why?</p>
+  <p class="fragment custom blur"><b style="color:  #a6826d">Challenges, Benefits, Opportunitiess</b></p>
+  <p class="fragment custom blur"><b style="color: #694d3d">Lessons</b> Learned</p>
+  <p class="fragment custom blur">What's in it for Us in the <b style="color: #824f35">Future</b>?</p>
 </section>
 
 ---
@@ -58,7 +59,7 @@ width="300"/>
     img.faces {
     width: 110px;
     height: 110px;
-    border-radius: 5%;
+    border-radius: 10%;
     }
 </style>
 <table>
@@ -76,7 +77,7 @@ width="300"/>
 
 ## Funding
 
-This project was funded by the [University of Manchester](https://www.manchester.ac.uk/) and the [FutureDams](https://www.futuredams.org/) project.
+This research was funded by the [University of Manchester](https://www.manchester.ac.uk/) and the [FutureDams](https://www.futuredams.org/) project.
 
 <table style="border: 0px hidden white;margin-left:auto;margin-right:auto;">
   <tr>
@@ -89,7 +90,7 @@ height="90px;" alt=""/></td>
   </tr>
 </table>
 
-We also acknowledge the help from [UKCEH](https://www.ceh.ac.uk/) and the support from [Research IT](https://research-it.manchester.ac.uk/)
+We also acknowledge the help received from [UKCEH](https://www.ceh.ac.uk/) and the support from [Research IT](https://research-it.manchester.ac.uk/)
 <table style="border: 0px hidden white;margin-left:auto;margin-right:auto;">
   <tr>
 <td align="center"><a href="https://www.ceh.ac.uk/"><img src="images/UKCEH-Logo_Long_WhiteOut_RGB-Transparent.png" 
@@ -103,47 +104,178 @@ height="90px;" alt=""/></td>
 
 ---
 
-## Project Outline
+## Part 1. Free Open Source Software
 <!-- .slide: style="text-align: center; font-size: 30px"> -->
 <style>
-    .image-float {
-        float: left;
-        position: relative;
-        };
-    .reveal .content-aside {
-        margin-right: 0px;
-        margin-left: 0px;
-        font-size: 10px;
-        padding-left: 0px;
-        float: right;
-        }
+.columns {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.column-left,
+.column-right {
+    width: 48%; /* Adjust as needed */
+}
+
+/* Adjust for responsive design */
+@media screen and (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+    .column-left,
+    .column-right {
+        width: 100%;
+    }
+}
+
+img.software_logos {
+    width: 450px;
+    border-radius: 10px;
+    opacity: 0.9;
+    }
+
 </style>
 
-  <div class="image-float">
-    <p class="reveal r-vstack fragment current-visible" data-fragment-index="1" style="position: relative; left: 0; top: 0;">
-        <img src="images/graphical_abstract_openresearch_left.drawio.png" height="500vh"/></p>
-    <p class="reveal r-vstack fragment current-visible" data-fragment-index="2" style="position:absolute; left:100px; top:0px;">
-        <a href="image2.jpg"><img src="images/graphical_abstract_openresearch_middle.drawio.png" height="500vh"/></a></p>
-    <p class="reveal r-vstack fragment" data-fragment-index="3" style="position:absolute; left:200px; top:20px;">
-        <a href="image3.jpg"><img src="images/graphical_abstract_openresearch_left.drawio.png" height="500vh"/></a></p>
-  </div>
-
-  <div>
-    <p class="fragment fade-down" data-fragment-index="1">RE-Emission - Estimation of GHG Emissions from Reservoirs</p>
-    <p class="fragment fade-down" data-fragment-index="1">GEOCaret - Geospatial Catchment & Reservoir Analysis Tool</p>
-    <p class="fragment" data-fragment-index="3">Text 3 (with image 3)</p>
-  </div>
+<section>
+    <div class="columns">
+        <div class="column-left">
+            <!-- Content for the left column goes here -->
+            <img style="padding-top: 50px; opacity:0.85" src="images/graphical_abstract_openresearch_left.drawio.png" height="550vh"/>
+        </div>
+        <div class="column-right" style="padding-top: 30px">
+            <!-- Content for the right column goes here -->
+            <p class="fragment fade-down" data-fragment-index="1"><img class="img software_logos" src="images/geocaret_logo.png" alt=""/></p>
+            <p class="fragment fade-down" data-fragment-index="1">Geospatial Analysis of Reservoirs and Catchments with Google Earth Engine and Python</p>
+            <p class="fragment fade-down" data-fragment-index="2"><img class="img software_logos" src="images/logo-banner-bw.png" alt=""/></p>
+            <p class="fragment fade-down" data-fragment-index="2"><a href="https://github.com/tomjanus/reemission">Estimation and Visualisation of GHG Emissions from Reservoirs</a></p>
+            <p class="fragment fade-down" data-fragment-index="2" style="font-size: 22px; color: #268758">We developed both packages out of necessity</p>
+        </div>
+    </div>
+</section>
 
 ---
 
-## Project - Wide Conventions
+## Part 2. Interpretation of Results
+<!-- .slide: style="text-align: center; font-size: 30px"> -->
+<style>
+.columns {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.column-left,
+.column-right {
+    width: 48%; /* Adjust as needed */
+}
+
+/* Adjust for responsive design */
+@media screen and (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+    .column-left,
+    .column-right {
+        width: 100%;
+    }
+}
+
+img.software_logos {
+    width: 450px;
+    border-radius: 10px;
+    opacity: 0.9;
+    }
+
+</style>
+
+<section>
+    <div class="columns">
+        <div class="column-left">
+            <!-- Content for the left column goes here -->
+            <img style="padding-top: 50px; opacity:0.85" src="images/graphical_abstract_openresearch_middle.drawio.png" height="550vh"/>
+        </div>
+        <div class="column-right" style="padding-top: 50px">
+            <!-- Content for the right column goes here -->
+            <div style="text-align: left">
+            <p><i class="fa fa-eye" style="color:#b3482b"></i> Interpretations Provide Another Layer of Transparency</p>
+            <p><i class="fa fa-exclamation" style="color:#b3482b"></i> Important for Gaining Confidence in Model Predictions</p>
+            <p><i class="fa fa-handshake-o" style="color:#268758"></i> Useful source of information in decision-making</p>
+            </div> 
+            <div>
+            <img src="images/dalex_even.png" width=120px style="border-radius: 50%;"/>
+            <p style="font-size: 20px">We used <a href="https://dalex.drwhy.ai/">DALEX</a> - A moDel Agnostic Language for Exploration and eXplanation implemented in <b>R</b> and <b>Python</b>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+---
+
+## Part 3. Computation & Reproducibility
+<!-- .slide: style="text-align: center; font-size: 30px"> -->
+<style>
+.columns {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.column-left,
+.column-right {
+    width: 48%; /* Adjust as needed */
+}
+
+/* Adjust for responsive design */
+@media screen and (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+    .column-left,
+    .column-right {
+        width: 100%;
+    }
+}
+
+img.software_logos {
+    width: 450px;
+    border-radius: 10px;
+    opacity: 0.9;
+    }
+
+</style>
+
+<section>
+    <div class="columns">
+        <div class="column-left">
+            <!-- Content for the left column goes here -->
+            <img style="padding-top: 50px; opacity:0.85" src="images/graphical_abstract_openresearch_right.drawio.png" height="550vh"/>
+        </div>
+        <div class="column-right" style="padding-top: 50px">
+            <!-- Content for the right column goes here -->
+            <div style="text-align: left">
+            <p><i class="fa fa-eye" style="color:#cf961b"></i> Model and Algorithm parsimony helps with reproducibility</p>
+            <p><i class="fa fa-btc" style="color:#b3482b"></i></i> Computation Costs Are Important for Reproducibility</p>
+            <p><i class="fa fa-legal" style="color:#349cc2"></i> Deterministic vs. Stochastic (e.g. Genetic Algorithms)?</p>
+            </div> 
+            <div>
+            <img src="images/tree-structured-networks.png" width=260px style="border-radius: 10px"/>
+            <p style="font-size: 20px">We used <a href="https://github.com/gomes-lab/Dam-Portfolio-Selection-Expansion-and-Compression-CPAIOR">a fully polynomial-time approximation scheme that approximates the Pareto frontier on tree-
+structured networks of Bai et al.</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+---
+
+### Challenges - Benefits - Opportunities
+
+<img class="r-stretch" style="border-radius: 20px; box-shadow: 10px 10px 35px rgba(180, 180, 180, 0.35);" src="images/open-research-practices-scaled.png" />
 
 ---
 
 <h2>Sharing Models with <i style="color: #FF7A59">Leaflet.js</i></h2>
 
 <iframe class="r-stretch" 
-style="border-radius: 30px; box-shadow: 15px 15px 35px rgba(180, 180, 180, 0.35);"
+style="border-radius: 20px; box-shadow: 15px 15px 35px rgba(180, 180, 180, 0.35);"
 src="https://tomjanus.github.io/mya_emissions_map/" frameborder="0" allowfullscreen>
 </iframe>
 <style>
@@ -152,6 +284,21 @@ src="https://tomjanus.github.io/mya_emissions_map/" frameborder="0" allowfullscr
   }
 </style>
 <p style="font-size: 25px">Source: <a href="https://tomjanus.github.io/mya_emissions_map/">  https://tomjanus.github.io/mya_emissions_map/</a></p>
+
+---
+
+<h2>Sharing results with <a href="https://plotly.com/examples/" style="color: #FF7A59">Plotly DASH</a></h2>
+
+<iframe class="r-stretch" 
+style="border-radius: 20px; box-shadow: 15px 15px 35px rgba(180, 180, 180, 0.35);"
+src="https://drawit-moea-results.onrender.com/" frameborder="0" allowfullscreen>
+</iframe>
+<style>
+  .left {
+    text-align: left;
+  }
+</style>
+<p style="font-size: 25px">Source: <a href="https://drawit-moea-results.onrender.com/">  https://drawit-moea-results.onrender.com/</a></p>
 
 ---
 
