@@ -1,4 +1,3 @@
-
 ## Tomasz Janus
 <!-- .slide: style="text-align: left;"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -198,7 +197,7 @@ img.software_logos {
             <div style="text-align: left">
             <p><i class="fa fa-eye" style="color:#b3482b"></i> Interpretations Provide Another Layer of Transparency</p>
             <p><i class="fa fa-exclamation" style="color:#b3482b"></i> Important for Gaining Confidence in Model Predictions</p>
-            <p><i class="fa fa-handshake-o" style="color:#268758"></i> Useful source of information in decision-making</p>
+            <p><i class="fa fa-handshake-o" style="color:#268758"></i> Useful source of information for decision-making</p>
             </div> 
             <div>
             <img src="images/dalex_even.png" width=120px style="border-radius: 50%;"/>
@@ -251,7 +250,7 @@ img.software_logos {
         <div class="column-right" style="padding-top: 50px">
             <!-- Content for the right column goes here -->
             <div style="text-align: left">
-            <p><i class="fa fa-eye" style="color:#cf961b"></i> Model and Algorithm parsimony helps with reproducibility</p>
+            <p><i class="fa fa-eye" style="color:#cf961b"></i> Model and Algorithm parsimony helps Reproducibility</p>
             <p><i class="fa fa-btc" style="color:#b3482b"></i></i> Computation Costs Are Important for Reproducibility</p>
             <p><i class="fa fa-legal" style="color:#349cc2"></i> Deterministic vs. Stochastic (e.g. Genetic Algorithms)?</p>
             </div> 
@@ -268,7 +267,11 @@ structured networks of Bai et al.</a></p>
 
 ### Challenges - Benefits - Opportunities
 
-<img class="r-stretch" style="border-radius: 20px; box-shadow: 10px 10px 35px rgba(180, 180, 180, 0.35);" src="images/open-research-practices-scaled.png" />
+<img class="r-stretch" style="border-radius: 20px; box-shadow: 10px 10px 35px rgba(180, 180, 180, 0.35);" src="images/open-research-practices-scaled2.png" />
+
+---
+
+### Model and Data Representation in JSON
 
 ---
 
@@ -324,3 +327,24 @@ CMD /opt/mssql/bin/sqlservr
 </pre></code>
 
 ---
+
+### Outsourcing computation and data storage
+
+---
+
+## Lessons Learned
+
+---
+
+## What's in it for Us in the Future?
+
+---
+
+#### This presentation was made with <a style="color:#e6af19" href="https://revealjs.com">reveal.js</a>
+---
+
+#### The source code can be found <i class="fa fa-github"></i> at <a href="https://github.com/tomjanus/openresearch2024-presentation">https://github.com/tomjanus/openresearch2024-presentation</a>
+---
+
+#### Please visit us site later for updates
+<img src="images/qr_code.png" width=250px>
