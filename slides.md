@@ -33,7 +33,6 @@ width="300"/></p>
 ---
 
 ## Presentation Plan
-
 <style>
   .fragment.blur {
     filter: blur(5px);
@@ -45,7 +44,7 @@ width="300"/></p>
 <section>
   <p>Project <b style="color: #c48560">Introduction</b></p>
   <p class="fragment custom blur">Which <b style="color: #82401a">Open Research</b> Practices Have We Adopted and Why?</p>
-  <p class="fragment custom blur"><b style="color:  #a6826d">Challenges, Benefits, Opportunitiess</b></p>
+  <p class="fragment custom blur"><b style="color:  #a6826d">Benefits, Challenges, Opportunitiess</b></p>
   <p class="fragment custom blur"><b style="color: #694d3d">Lessons</b> Learned</p>
   <p class="fragment custom blur">What's in it for Us in the <b style="color: #824f35">Future</b>?</p>
 </section>
@@ -81,10 +80,10 @@ This research was funded by the [University of Manchester](https://www.mancheste
 <table style="border: 0px hidden white;margin-left:auto;margin-right:auto;">
   <tr>
 <td align="center"><a href="https://www.manchester.ac.uk/"><img src="images/TAB_col_background.png" 
-style="margin: 0px 0px 0px 0px; box-shadow: 10px 10px 25px rgba(255, 255, 255, 0.25)"
+style="margin: 0px 0px 0px 0px; border-radius: 5px; box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.25)"
 height="90px;" alt=""/></td>
 <td align="center"><a href="https://www.futuredams.org/"><img src="images/future-dams-logo.png" 
-style="margin: 0px 0px 0px 120px; box-shadow: 10px 10px 25px rgba(255, 255, 255, 0.4)"
+style="margin: 0px 0px 0px 120px; border-radius: 5px; box-shadow: 3px 3px 10px rgba(212, 174, 110, 0.4)"
 height="90px;" alt=""/></td>
   </tr>
 </table>
@@ -93,10 +92,10 @@ We also acknowledge the help received from [UKCEH](https://www.ceh.ac.uk/) and t
 <table style="border: 0px hidden white;margin-left:auto;margin-right:auto;">
   <tr>
 <td align="center"><a href="https://www.ceh.ac.uk/"><img src="images/UKCEH-Logo_Long_WhiteOut_RGB-Transparent.png" 
-style="margin: 0px 0px 0px 0px; box-shadow: 10px 10px 25px rgba(255, 255, 255, 0.25)"
+style="margin: 0px 0px 0px 0px; border-radius: 5px; box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.25)"
 height="90px;" alt=""/></td>
 <td align="center"><a href="https://research-it.manchester.ac.uk/"><img src="images/research-it-logo.png" 
-style="margin: 0px 0px 0px 60px; box-shadow: 10px 10px 25px rgba(255, 255, 255, 0.25)"
+style="margin: 0px 0px 0px 60px; border-radius: 5px; box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.25)"
 height="90px;" alt=""/></td>
   </tr>
 </table>
@@ -154,7 +153,7 @@ img.software_logos {
 
 ---
 
-## Part 2. Interpretation of Results
+## Part 2. Model and Prediction Interpretations
 <!-- .slide: style="text-align: center; font-size: 30px"> -->
 <style>
 .columns {
@@ -265,13 +264,138 @@ structured networks of Bai et al.</a></p>
 
 ---
 
-### Challenges - Benefits - Opportunities
+### Benefits - Challenges - Opportunities
 
 <img class="r-stretch" style="border-radius: 20px; box-shadow: 10px 10px 35px rgba(180, 180, 180, 0.35);" src="images/open-research-practices-scaled2.png" />
 
 ---
 
 ### Model and Data Representation in JSON
+<!-- .slide: style="text-align: center; font-size: 30px"> -->
+<style>
+  #left {
+    left:-8.33%;
+    text-align: justified;
+    float: left;
+    width:50%;
+    z-index:-10;
+  }
+
+  #right {
+    left:31.25%;
+    top: 75px;
+    float: right;
+    text-align: justified;
+    z-index:-10;
+    width:50%;
+  }
+
+  .hljs {
+    display: block;
+    overflow-x: auto;
+    line-height: 120%;
+    font-size:17px;
+  }
+</style>
+
+<div id="left">
+<h4 style="font-size: 28px">Water Model</h4>
+<pre><code class="language-json" data-line-numbers="|2-6|7-11|12-19|31-34">{
+  "metadata": {
+    "title": "Reservoir 1",
+    "description": "",
+    "minimum_version": "0.1"
+  },
+  "timestepper": {
+    "start": "2015-01-01",
+    "end": "2015-12-31",
+    "timestep": 1
+  },
+  "nodes": [
+    {
+      "name": "supply1",
+      "type": "Storage",
+      "max_volume": 35,
+      "initial_volume": 35,
+      "outputs": 0
+    },
+    {
+      "name": "link1",
+      "type": "Link"
+    },
+    {
+      "name": "demand1",
+      "type": "Output",
+      "max_flow": 10,
+      "cost": -10
+    }
+  ],
+  "edges": [
+    ["supply1", "link1"],
+    ["link1", "demand1"]
+  ]
+}
+</pre></code>
+</div>
+
+<div id="right">
+<h4 style="font-size: 28px">Emissions Model</h4>
+<pre><code class="language-json" data-line-numbers="|3-11|12-32|33-52">{
+  "Reservoir 1": {
+    "id": 1,
+    "type": "hydroelectric",
+    "monthly_temps": [
+      13.9, 16.0, 19.3, 22.8, 
+      24.2, 24.5, 24.2, 24.3, 
+      23.9, 22.1, 18.5, 14.8
+    ],
+    "year_vector": [1, 5, 10, 20],
+    "gasses": ["co2", "ch4", "n2o"],
+    "catchment": {
+      "runoff": 1115.0,
+      "area": 12582.6,
+      "riv_length": 0.0,
+      "population": 1587524,
+      "area_fractions": [
+        0.0, 0.0, 0.003, 0.002, 0.001, 
+        0.146, 0.391, 0.457, 0.0
+      ],
+      "slope": 23.0,
+      "precip": 1498.0,
+      "etransp": 1123.0,
+      "soil_wetness": 144.0,
+      "mean_olsen": 5.85,
+      "biogenic_factors": {
+        "biome": "tropical moist broadleaf",
+        "climate": "temperate",
+        "soil_type": "mineral",
+        "treatment_factor": "primary (mechanical)"
+      }
+    },
+    "reservoir": {
+      "volume": 7238166.0,
+      "area": 1.60,
+      "max_depth": 22.0,
+      "mean_depth": 4.5,
+      "area_fractions": [
+        0.0, 0.0, 0.0, 0.0, 0.0, 0.45, 
+        0.15, 0.4, 0.0, 0.0, 0.0, 0.0, 
+        0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+        0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 
+        0.0, 0.0, 0.0
+      ],
+      "soil_carbon": 6.281,
+      "mean_radiance": 4.66,
+      "mean_radiance_may_sept": 4.328,
+      "mean_radiance_nov_mar": 4.852,
+      "mean_monthly_windspeed": 1.08,
+      "water_intake_depth": null
+    }
+  }
+}
+</pre></code>
+</div>
+<img src="images/json-tab-vis-transformations.drawio.png" height=85px>
 
 ---
 
@@ -301,42 +425,115 @@ src="https://drawit-moea-results.onrender.com/" frameborder="0" allowfullscreen>
     text-align: left;
   }
 </style>
-<p style="font-size: 25px">Source: <a href="https://drawit-moea-results.onrender.com/">  https://drawit-moea-results.onrender.com/</a></p>
+<p style="font-size: 25px">Source: <a href="https://drawit-moea-results.onrender.com/">  https://drawit-moea-results.onrender.com/</a> (from another project)</p>
+
+---
+
+### Outsourcing computation and data storage
+
+<img class="r-stretch" style="border-radius: 20px; box-shadow: 10px 10px 35px rgba(180, 180, 180, 0.35);" src="images/geocaret-gee-connections.drawio.png" />
 
 ---
 
 <!-- Place this in your header -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
-## Lowering entry barrier with <i class="devicon-docker-plain-wordmark"></i>
+## Containerising with <i class="devicon-docker-plain-wordmark"></i>
+<!-- .slide: style="text-align: center; font-size: 30px"> -->
+<style>
+  #left {
+    left:-8.33%;
+    text-align: justified;
+    float: left;
+    width:50%;
+    z-index:-10;
+  }
 
-<pre><code data-line-numbers="1|3|5-8|10|12|14">FROM mcr.microsoft.com/mssql/server:2019-CU5-ubuntu-18.04
+  #right {
+    left:31.25%;
+    top: 75px;
+    float: right;
+    text-align: justified;
+    z-index:-10;
+    width:50%;
+  }
 
-USER root
+  .hljs {
+    display: block;
+    overflow-x: auto;
+    line-height: 140%;
+    font-size:16px;
+  }
 
-RUN mkdir /var/opt/sqlserver
-RUN mkdir /var/opt/sqlserver/sqldata
-RUN mkdir /var/opt/sqlserver/sqllog
-RUN mkdir /var/opt/sqlserver/sqlbackups
+</style>
 
-RUN chown -R mssql /var/opt/sqlserver
+<div id="left">
+<img style="border-radius: 20px; box-shadow: 10px 10px 35px rgba(180, 180, 180, 0.35);" src="images/docker-explanation-cropped.png" width=380px/>
+</div>
 
-USER mssql
-
-CMD /opt/mssql/bin/sqlservr
+<div id="right">
+<pre><code class="language-docker" data-line-numbers="1|9-13|15-16">ARG PYTHON_VERSION=3.8.18
+FROM python:${PYTHON_VERSION}-slim as base
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+RUN apt-get update -y
+RUN apt install curl -y
+ENV PATH=/google-cloud-sdk/bin:$PATH
+WORKDIR /
+RUN export CLOUD_SDK_VERSION="410.0.0" && \
+    curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${CLOUD_SDK_VERSION}-linux-x86_64.tar.gz && \
+    tar xzf google-cloud-sdk-${CLOUD_SDK_VERSION}-linux-x86_64.tar.gz && \
+    rm google-cloud-sdk-${CLOUD_SDK_VERSION}-linux-x86_64.tar.gz && \
+    ln -s /lib /lib64
+RUN useradd --create-home --shell /bin/bash appuser
+COPY requirements.txt .
+RUN python -m pip install -r requirements.txt
+USER appuser
+RUN mkdir -p /home/appuser/geocaret
+WORKDIR /home/appuser/geocaret
+COPY --chown=appuser:appuser . .
+ENTRYPOINT [ "/bin/bash", "./docker_entrypoint.sh" ]
+CMD [ "echo", "You must specify a command to run. See README.Docker.md for details." ]
 </pre></code>
+</div>
 
 ---
 
-### Outsourcing computation and data storage
+### Lessons Learned
+<style>
+  .fragment.blur {
+    filter: blur(5px);
+  }
+  .fragment.blur.visible {
+    filter: none;
+  }
+</style>
+<section>
+  <p>1. Open Research requires <i style="color: #d16d45">additional resources and long-term planning</i></p>
+  <p class="fragment custom blur">2. This paradigm shift can be a <i style="color: #d16d45">barier for adoption</i></p>
+  <p class="fragment custom blur">3. It borrows lots from IT - <i style="color: #d16d45">Technologically challenging for non-IT people</i></p>
+  <p class="fragment custom blur">4. <i style="color: #2a74ad">Should be accounted for in project bids</i></p>
+  <p class="fragment custom blur">5. <i style="color: #37871a">Enforces good practices</i></p>
+  <p class="fragment custom blur">6. <i style="color: #37871a">Increases Impact</i></p>
+</section>
 
 ---
 
-## Lessons Learned
-
----
-
-## What's in it for Us in the Future?
+### What's in it for Us in the Future?
+<style>
+  .fragment.blur {
+    filter: blur(5px);
+  }
+  .fragment.blur.visible {
+    filter: none;
+  }
+</style>
+<section>
+  <p>1. <i style="color: #2a74ad">More interactive publishing options</i> (paper with code in one place)</b></p>
+  <p class="fragment custom blur">2. <i style="color: #2a74ad">Bespoke Tools and Platforms</i> for Open Reproducible Research</p>
+  <p class="fragment custom blur">3. <i style="color: #2a74ad">Increased</i> emphasis on <i style="color: #2a74ad">opennes and reproducibility</i> by publishers and reviewers</p>
+  <p class="fragment custom blur">4. <i style="color: #2a74ad">Automated</i> AI-based research output <i style="color: #2a74ad">checks?</i></p>
+</section>
 
 ---
 
@@ -346,5 +543,5 @@ CMD /opt/mssql/bin/sqlservr
 #### The source code can be found <i class="fa fa-github"></i> at <a href="https://github.com/tomjanus/openresearch2024-presentation">https://github.com/tomjanus/openresearch2024-presentation</a>
 ---
 
-#### Please visit us site later for updates
+#### Please visit us later for updates
 <img src="images/qr_code.png" width=250px>
