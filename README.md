@@ -4,7 +4,6 @@
 This is a repository containing slides for a presentation delivered at the
 [Open Research Conference](https://www.openresearch.manchester.ac.uk/news-events/events/or-conference-24/) held at the University of Manchester on 24 April 2024.
 
-
 The talk is entitled:
 *"Open and Reproducible in a Large Multinational Project? - Low-Emission Hydroelectric Dam Expansion Planning in Myanmar"*
 

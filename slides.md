@@ -224,8 +224,8 @@ height="90px;" alt=""/></td>
 <div id="right">
     <!-- Content for the right column goes here -->
     <div style="text-align: left">
-    <p><i class="fa fa-eye" style="color:#cf961b"></i> Model and Algorithm parsimony helps Reproducibility</p>
-    <p><i class="fa fa-btc" style="color:#b3482b"></i></i> Computation Costs Are Important for Reproducibility</p>
+    <p><i class="fa fa-eye" style="color:#cf961b"></i> Model and Algorithm Parsimony helps Reproducibility</p>
+    <p><i class="fa fa-btc" style="color:#b3482b"></i></i> Computation Costs/Effort May Affect Reproducibility</p>
     <p><i class="fa fa-legal" style="color:#349cc2"></i> Deterministic vs. Stochastic (e.g. Genetic Algorithms)?</p>
     </div> 
     <div>
@@ -491,7 +491,7 @@ CMD [ "echo", "You must specify a command to run. See README.Docker.md for detai
 
 ---
 
-### Outlook to the Future?
+### Outlook to the Future
 <style>
   .fragment.blur {
     filter: blur(5px);
@@ -501,11 +501,11 @@ CMD [ "echo", "You must specify a command to run. See README.Docker.md for detai
   }
 </style>
 <section>
-  <p>1. <i style="color: #a87e2a">More interactive publishing options</i> (paper with code in one place)</b></p>
+  <p>1. <i style="color: #a87e2a">More Interactive Publishing </i> (paper with code in one place)</b></p>
   <p class="fragment custom blur">2. <i style="color: #a87e2a">Bespoke Tools and Platforms</i> for Open Reproducible Research - higher level abstraction</p>
   <!-- <p class="fragment custom blur">3. <i style="color: #a87e2a">Increased</i> emphasis on <i style="color: #a87e2a">opennes and reproducibility</i> by publishers and reviewers</p> -->
-  <p class="fragment custom blur">3. <i style="color: #a87e2a">Research</i>-focused <i style="color: #a87e2a">Social Network?</i></p>
-  <p class="fragment custom blur">4. Who/What will be `digesting` our Research?</p>
+  <!-- <p class="fragment custom blur">3. <i style="color: #a87e2a">Research</i>-focused <i style="color: #a87e2a">Social Network?</i></p> -->
+  <p class="fragment custom blur">3. Who/What will be `digesting` our Research?</p>
 </section>
 
 ---
