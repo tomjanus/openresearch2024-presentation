@@ -46,7 +46,7 @@ width="300"/></p>
   <p class="fragment custom blur">Which <b style="color: #82401a">Open Research</b> Practices Have We Adopted and Why?</p>
   <p class="fragment custom blur"><b style="color:  #a6826d">Benefits, Challenges, Opportunitiess</b></p>
   <p class="fragment custom blur"><b style="color: #694d3d">Lessons</b> Learned</p>
-  <p class="fragment custom blur">What's in it for Us in the <b style="color: #824f35">Future</b>?</p>
+  <p class="fragment custom blur">Outlook to the <b style="color: #824f35">Future</b></p>
 </section>
 
 ---
@@ -483,7 +483,7 @@ CMD [ "echo", "You must specify a command to run. See README.Docker.md for detai
 <section>
   <p>1. Open Research requires <i style="color: #d16d45">additional resources and long-term planning</i></p>
   <p class="fragment custom blur">2. This paradigm shift can be a <i style="color: #d16d45">barier for adoption</i></p>
-  <p class="fragment custom blur">3. It borrows lots from IT - <i style="color: #d16d45">Technologically challenging for non-IT people</i></p>
+  <p class="fragment custom blur">3. Open Research borrows a lot from IT - <i style="color: #d16d45">technologically challenging</i></p>
   <p class="fragment custom blur">4. <i style="color: #2a74ad">Should be accounted for in project bids</i></p>
   <p class="fragment custom blur">5. <i style="color: #37871a">Enforces good practices</i></p>
   <p class="fragment custom blur">6. <i style="color: #37871a">Increases Impact</i></p>
@@ -491,7 +491,7 @@ CMD [ "echo", "You must specify a command to run. See README.Docker.md for detai
 
 ---
 
-### What's in it for Us in the Future?
+### Outlook to the Future?
 <style>
   .fragment.blur {
     filter: blur(5px);
@@ -501,10 +501,11 @@ CMD [ "echo", "You must specify a command to run. See README.Docker.md for detai
   }
 </style>
 <section>
-  <p>1. <i style="color: #2a74ad">More interactive publishing options</i> (paper with code in one place)</b></p>
-  <p class="fragment custom blur">2. <i style="color: #2a74ad">Bespoke Tools and Platforms</i> for Open Reproducible Research</p>
-  <p class="fragment custom blur">3. <i style="color: #2a74ad">Increased</i> emphasis on <i style="color: #2a74ad">opennes and reproducibility</i> by publishers and reviewers</p>
-  <p class="fragment custom blur">4. <i style="color: #2a74ad">Automated</i> AI-based research output <i style="color: #2a74ad">checks?</i></p>
+  <p>1. <i style="color: #a87e2a">More interactive publishing options</i> (paper with code in one place)</b></p>
+  <p class="fragment custom blur">2. <i style="color: #a87e2a">Bespoke Tools and Platforms</i> for Open Reproducible Research - higher level abstraction</p>
+  <!-- <p class="fragment custom blur">3. <i style="color: #a87e2a">Increased</i> emphasis on <i style="color: #a87e2a">opennes and reproducibility</i> by publishers and reviewers</p> -->
+  <p class="fragment custom blur">3. <i style="color: #a87e2a">Research</i>-focused <i style="color: #a87e2a">Social Network?</i></p>
+  <p class="fragment custom blur">4. Who/What will be `digesting` our Research?</p>
 </section>
 
 ---
