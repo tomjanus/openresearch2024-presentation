@@ -388,6 +388,7 @@ src="https://tomjanus.github.io/mya_emissions_map/" frameborder="0" allowfullscr
 
 ---
 
+<!--
 <h2>Sharing results with <a href="https://plotly.com/examples/" style="color: #FF7A59">Plotly DASH</a></h2>
 
 <iframe class="r-stretch" 
@@ -402,6 +403,7 @@ src="https://drawit-moea-results.onrender.com/" frameborder="0" allowfullscreen>
 <p style="font-size: 25px">Source: <a href="https://drawit-moea-results.onrender.com/">  https://drawit-moea-results.onrender.com/</a> (from another project)</p>
 
 ---
+-->
 
 ### Outsourcing computation and data storage
 
