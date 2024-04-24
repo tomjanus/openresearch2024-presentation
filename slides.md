@@ -105,162 +105,135 @@ height="90px;" alt=""/></td>
 ## Part 1. Free Open Source Software
 <!-- .slide: style="text-align: center; font-size: 30px"> -->
 <style>
-.columns {
-    display: flex;
-    justify-content: space-between; /* Adjust as needed */
-}
+  #left {
+    left:-8.33%;
+    text-align: justified;
+    float: left;
+    width:50%;
+    z-index:-10;
+  }
 
-.column-left,
-.column-right {
-    width: 48%; /* Adjust as needed */
-}
+  #right {
+    left:31.25%;
+    top: 75px;
+    float: right;
+    text-align: justified;
+    z-index:-10;
+    width:50%;
+  }
 
-/* Adjust for responsive design */
-@media screen and (max-width: 768px) {
-    .columns {
-        flex-direction: column;
-    }
-    .column-left,
-    .column-right {
-        width: 100%;
-    }
-}
-
-img.software_logos {
-    width: 450px;
-    border-radius: 10px;
-    opacity: 0.9;
-    }
-
+  img.software_logos {
+      width: 450px;
+      border-radius: 10px;
+      opacity: 0.9;
+      }
 </style>
 
-<section>
-    <div class="columns">
-        <div class="column-left">
-            <!-- Content for the left column goes here -->
-            <img style="padding-top: 50px; opacity:0.85" src="images/graphical_abstract_openresearch_left.drawio.png" height="550vh"/>
-        </div>
-        <div class="column-right" style="padding-top: 30px">
-            <!-- Content for the right column goes here -->
-            <p class="fragment fade-down" data-fragment-index="1"><img class="img software_logos" src="images/geocaret_logo.png" alt=""/></p>
-            <p class="fragment fade-down" data-fragment-index="1">Geospatial Analysis of Reservoirs and Catchments with Google Earth Engine and Python</p>
-            <p class="fragment fade-down" data-fragment-index="2"><img class="img software_logos" src="images/logo-banner-bw.png" alt=""/></p>
-            <p class="fragment fade-down" data-fragment-index="2"><a href="https://github.com/tomjanus/reemission">Estimation and Visualisation of GHG Emissions from Reservoirs</a></p>
-            <p class="fragment fade-down" data-fragment-index="2" style="font-size: 22px; color: #268758">We developed both packages out of necessity</p>
-        </div>
-    </div>
-</section>
+<div id="left">
+    <!-- Content for the left column goes here -->
+    <img style="opacity:0.85" src="images/graphical_abstract_openresearch_left.drawio.png" height="550vh"/>
+</div>
+<div id="right">
+    <!-- Content for the right column goes here -->
+    <p class="fragment fade-down" data-fragment-index="1"><img class="img software_logos" src="images/geocaret_logo.png" alt=""/></p>
+    <p class="fragment fade-down" data-fragment-index="1">Geospatial Analysis of Reservoirs and Catchments with Google Earth Engine and Python</p>
+    <p class="fragment fade-down" data-fragment-index="2"><img class="img software_logos" src="images/logo-banner-bw.png" alt=""/></p>
+    <p class="fragment fade-down" data-fragment-index="2"><a href="https://github.com/tomjanus/reemission">Estimation and Visualisation of GHG Emissions from Reservoirs</a></p>
+    <p class="fragment fade-down" data-fragment-index="2" style="font-size: 22px; color: #268758">We developed both packages out of necessity</p>
+</div>
 
 ---
 
 ## Part 2. Model and Prediction Interpretations
 <!-- .slide: style="text-align: center; font-size: 30px"> -->
 <style>
-.columns {
-    display: flex;
-    justify-content: space-between; /* Adjust as needed */
-}
+  #left {
+    left:-8.33%;
+    text-align: justified;
+    float: left;
+    width:50%;
+    z-index:-10;
+  }
 
-.column-left,
-.column-right {
-    width: 48%; /* Adjust as needed */
-}
+  #right {
+    left:31.25%;
+    top: 75px;
+    float: right;
+    text-align: justified;
+    z-index:-10;
+    width:50%;
+  }
 
-/* Adjust for responsive design */
-@media screen and (max-width: 768px) {
-    .columns {
-        flex-direction: column;
-    }
-    .column-left,
-    .column-right {
-        width: 100%;
-    }
-}
-
-img.software_logos {
-    width: 450px;
-    border-radius: 10px;
-    opacity: 0.9;
-    }
-
+  img.software_logos {
+      width: 450px;
+      border-radius: 10px;
+      opacity: 0.9;
+      }
 </style>
 
-<section>
-    <div class="columns">
-        <div class="column-left">
-            <!-- Content for the left column goes here -->
-            <img style="padding-top: 50px; opacity:0.85" src="images/graphical_abstract_openresearch_middle.drawio.png" height="550vh"/>
-        </div>
-        <div class="column-right" style="padding-top: 50px">
-            <!-- Content for the right column goes here -->
-            <div style="text-align: left">
-            <p><i class="fa fa-eye" style="color:#b3482b"></i> Interpretations Provide Another Layer of Transparency</p>
-            <p><i class="fa fa-exclamation" style="color:#b3482b"></i> Important for Gaining Confidence in Model Predictions</p>
-            <p><i class="fa fa-handshake-o" style="color:#268758"></i> Useful source of information for decision-making</p>
-            </div> 
-            <div>
-            <img src="images/dalex_even.png" width=120px style="border-radius: 50%;"/>
-            <p style="font-size: 20px">We used <a href="https://dalex.drwhy.ai/">DALEX</a> - A moDel Agnostic Language for Exploration and eXplanation implemented in <b>R</b> and <b>Python</b>.</p>
-            </div>
-        </div>
+<div id="left">
+    <!-- Content for the left column goes here -->
+    <img style="opacity:0.85" src="images/graphical_abstract_openresearch_middle.drawio.png" height="550vh"/>
+</div>
+<div id="right">
+    <!-- Content for the right column goes here -->
+    <div style="text-align: left">
+    <p><i class="fa fa-eye" style="color:#b3482b"></i> Interpretations Provide Another Layer of Transparency</p>
+    <p><i class="fa fa-exclamation" style="color:#b3482b"></i> Important for Gaining Confidence in Model Predictions</p>
+    <p><i class="fa fa-handshake-o" style="color:#268758"></i> Useful source of information for decision-making</p>
+    </div> 
+    <div>
+    <img src="images/dalex_even.png" width=120px style="border-radius: 50%;"/>
+    <p style="font-size: 20px">We used <a href="https://dalex.drwhy.ai/">DALEX</a> - A moDel Agnostic Language for Exploration and eXplanation implemented in <b>R</b> and <b>Python</b>.</p>
     </div>
-</section>
+</div>
 
 ---
 
 ## Part 3. Computation & Reproducibility
 <!-- .slide: style="text-align: center; font-size: 30px"> -->
 <style>
-.columns {
-    display: flex;
-    justify-content: space-between; /* Adjust as needed */
-}
+  #left {
+    left:-8.33%;
+    text-align: justified;
+    float: left;
+    width:50%;
+    z-index:-10;
+  }
 
-.column-left,
-.column-right {
-    width: 48%; /* Adjust as needed */
-}
+  #right {
+    left:31.25%;
+    top: 75px;
+    float: right;
+    text-align: justified;
+    z-index:-10;
+    width:50%;
+  }
 
-/* Adjust for responsive design */
-@media screen and (max-width: 768px) {
-    .columns {
-        flex-direction: column;
-    }
-    .column-left,
-    .column-right {
-        width: 100%;
-    }
-}
-
-img.software_logos {
-    width: 450px;
-    border-radius: 10px;
-    opacity: 0.9;
-    }
-
+  img.software_logos {
+      width: 450px;
+      border-radius: 10px;
+      opacity: 0.9;
+  }
 </style>
 
-<section>
-    <div class="columns">
-        <div class="column-left">
-            <!-- Content for the left column goes here -->
-            <img style="padding-top: 50px; opacity:0.85" src="images/graphical_abstract_openresearch_right.drawio.png" height="550vh"/>
-        </div>
-        <div class="column-right" style="padding-top: 50px">
-            <!-- Content for the right column goes here -->
-            <div style="text-align: left">
-            <p><i class="fa fa-eye" style="color:#cf961b"></i> Model and Algorithm parsimony helps Reproducibility</p>
-            <p><i class="fa fa-btc" style="color:#b3482b"></i></i> Computation Costs Are Important for Reproducibility</p>
-            <p><i class="fa fa-legal" style="color:#349cc2"></i> Deterministic vs. Stochastic (e.g. Genetic Algorithms)?</p>
-            </div> 
-            <div>
-            <img src="images/tree-structured-networks.png" width=260px style="border-radius: 10px"/>
-            <p style="font-size: 20px">We used <a href="https://github.com/gomes-lab/Dam-Portfolio-Selection-Expansion-and-Compression-CPAIOR">a fully polynomial-time approximation scheme that approximates the Pareto frontier on tree-
+<div id="left">
+    <!-- Content for the left column goes here -->
+    <img style="opacity:0.85" src="images/graphical_abstract_openresearch_right.drawio.png" height="550vh"/>
+</div>
+<div id="right">
+    <!-- Content for the right column goes here -->
+    <div style="text-align: left">
+    <p><i class="fa fa-eye" style="color:#cf961b"></i> Model and Algorithm parsimony helps Reproducibility</p>
+    <p><i class="fa fa-btc" style="color:#b3482b"></i></i> Computation Costs Are Important for Reproducibility</p>
+    <p><i class="fa fa-legal" style="color:#349cc2"></i> Deterministic vs. Stochastic (e.g. Genetic Algorithms)?</p>
+    </div> 
+    <div>
+    <img src="images/tree-structured-networks.png" width=260px style="border-radius: 10px"/>
+    <p style="font-size: 20px">We used <a href="https://github.com/gomes-lab/Dam-Portfolio-Selection-Expansion-and-Compression-CPAIOR">a fully polynomial-time approximation scheme that approximates the Pareto frontier on tree-
 structured networks of Bai et al.</a></p>
-            </div>
-        </div>
     </div>
-</section>
+</div>
 
 ---
 
@@ -464,7 +437,6 @@ src="https://drawit-moea-results.onrender.com/" frameborder="0" allowfullscreen>
     line-height: 140%;
     font-size:16px;
   }
-
 </style>
 
 <div id="left">
