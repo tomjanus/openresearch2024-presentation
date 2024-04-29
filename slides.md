@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
 ## Tomasz Janus
 <!-- .slide: style="text-align: left;"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -100,6 +102,55 @@ style="margin: 0px 0px 0px 60px; border-radius: 5px; box-shadow: 3px 3px 10px rg
 height="90px;" alt=""/></td>
   </tr>
 </table>
+
+---
+
+### Key Takeaways
+<style>
+  #small-text {
+    left:-8.33%;
+    text-align: justified;
+    float: left;
+    width:100%;
+    z-index:-10;
+    font-size: 30px; }
+
+   #padded-li {
+    padding: 8px;
+   }
+  }
+</style>
+ <ul id="small-text">
+  <li id="padded-li">Achieving transparency and reproducibility in research requires many open research practices coming at once - open software/scripts/methodologies, open data, accessibility, auditability, claer comprehensive documentation, right model choices, and so on. The list is long.</li>
+  <li id="padded-li">It is not always possible to tick all the boxes but aiming for transparency and openness and making your work reproducible by others will increase the impact of your work and reach more people.</li>
+  <li id="padded-li">A lot of processes that we apply in open research are adopted from <b>IT</b> - version control, automated testing, documentation, integration pipelines, data custody, etc. and are difficult to achieve without the help of specialists. More high-level tools are needed for the research community that abstract some of these low level tasks and thus, reduce complexity and work-load.</li>
+</ul> 
+
+---
+
+### Open-research concepts applied in our work
+<style>
+  #small-text {
+    left:-8.33%;
+    text-align: justified;
+    float: left;
+    width:100%;
+    z-index:-10;
+    font-size: 23px;
+    }
+
+   #padded-li {
+    padding: 7px;
+   }
+  }
+</style>
+ <ol id="small-text">
+  <li id="padded-li">Creating bespoke free open-source software.</li>
+  <li id="padded-li">Adding explanations to model predictions using explainable AI (xAI) techniques. This step increases transparency by explaining which inputs and by how much contributed to predictions and is invaluable for decision makers.</li>
+  <li id="padded-li">Using parsimonious fast and deterministic models helps with reproducibility and allows the readers to replicate your results without needing to access expensive computing facilities. This is in contrast to slower and/or stochastic algorithms such as e.g. Genetic Algorithms, that can be computationally intensive and do not guarantee reaching the (optimal) solution.</li>
+  <li id="padded-li">Setting up model descriptions, configurations and inputs in text format such as JSON that can be version controlled and integrated into deployment pipelines such as GitHub actions. This ensures that everyone on the team can work with the most current version of the model and prevents mistakes due to people working on different versions of the model. Changes to the models are automatically integrated into workflows and can be visualised online using e.g. GitHub pages.</li>
+  <li id="padded-li">Models and software can be optionally deployed in Docker containers ensuring that each user has the same working environment. This prevents mismatches due to incompatible/outdated packages and thus facilitates reproducibility.</li>
+</ol> 
 
 ---
 
@@ -388,31 +439,11 @@ src="https://tomjanus.github.io/mya_emissions_map/" frameborder="0" allowfullscr
 
 ---
 
-<!--
-<h2>Sharing results with <a href="https://plotly.com/examples/" style="color: #FF7A59">Plotly DASH</a></h2>
-
-<iframe class="r-stretch" 
-style="border-radius: 20px; box-shadow: 15px 15px 35px rgba(180, 180, 180, 0.35);"
-src="https://drawit-moea-results.onrender.com/" frameborder="0" allowfullscreen>
-</iframe>
-<style>
-  .left {
-    text-align: left;
-  }
-</style>
-<p style="font-size: 25px">Source: <a href="https://drawit-moea-results.onrender.com/">  https://drawit-moea-results.onrender.com/</a> (from another project)</p>
-
----
--->
-
 ### Outsourcing computation and data storage
 
 <img class="r-stretch" style="border-radius: 20px; box-shadow: 10px 10px 35px rgba(180, 180, 180, 0.35);" src="images/geocaret-gee-connections.drawio.png" />
 
 ---
-
-<!-- Place this in your header -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 
 ## Containerising with <i class="devicon-docker-plain-wordmark"></i>
 <!-- .slide: style="text-align: center; font-size: 30px"> -->
@@ -508,7 +539,7 @@ CMD [ "echo", "You must specify a command to run. See README.Docker.md for detai
   <p class="fragment custom blur">2. <i style="color: #a87e2a">Bespoke Tools and Platforms</i> for Open Reproducible Research - higher level abstraction</p>
   <!-- <p class="fragment custom blur">3. <i style="color: #a87e2a">Increased</i> emphasis on <i style="color: #a87e2a">opennes and reproducibility</i> by publishers and reviewers</p> -->
   <!-- <p class="fragment custom blur">3. <i style="color: #a87e2a">Research</i>-focused <i style="color: #a87e2a">Social Network?</i></p> -->
-  <p class="fragment custom blur">3. Who/What will be <em>digesting</em> our Research?</p>
+  <p class="fragment custom blur">3. Who/What is the end-user of our outputs?</p>
 </section>
 
 ---
@@ -524,3 +555,4 @@ CMD [ "echo", "You must specify a command to run. See README.Docker.md for detai
 <img src="images/qr_code.png" width=250px>
 </div>
 <a style="font-size: 35px" href="https://tomjanus.github.io/openresearch2024-presentation/">https://tomjanus.github.io/openresearch2024-presentation/</a>
+
